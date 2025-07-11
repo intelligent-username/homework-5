@@ -151,4 +151,15 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
             throw new RuntimeException(ex);
         }
     }
+
+    @Override
+    public void setCurrentUser(String username) {
+        // Empty implementation for DB version
+    }
+
+    @Override
+    public String getCurrentUser() {
+        // Empty implementation for DB version
+        return null;
+    }
 }
